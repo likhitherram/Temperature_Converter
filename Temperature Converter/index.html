@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+      <div id="content-container">
+        <h2 id="container-heading">Temperature Converter</h2>
+        <div id="calculations-container">
+          <div class="content-division">
+            <div class="division-heading">From</div>
+            <div class="inputs-container">
+              <input
+                type="number"
+                class="input-field inputs"
+                name="input"
+                id="input-box"
+                placeholder="0"
+                required
+              />
+              <div class="dropdown-container">
+                <select class="dropdown inputs" id="input-dropdown">
+                  <option value="Celcius" selected>Celcius</option>
+                  <option value="Farenheit">Farenheit</option>
+                  <option value="Kelvin">Kelvin</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="content-division">
+            <div class="division-heading">To</div>
+            <div class="inputs-container">
+              <input
+                type="text"
+                class="input-field inputs"
+                name="result"
+                id="result-box"
+                placeholder="0"
+                disabled
+              />
+             <div class="dropdown-container">
+                <select class="dropdown inputs" id="result-dropdown">
+                  <option value="Farenheit" selected>Farenheit</option>
+                  <option value="Celcius">Celcius</option>
+                  <option value="Kelvin">Kelvin</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="convert-btn" class="inputs" style="color: rgb(255, 255, 255);" onclick="converter()">
+          Convert
+        </button>
+      </div>
+    <footer>
+      <span> &#169; <strong>Temperature Converter</strong>. All Rights Reserved</span> <br><span style="line-height: 40px;"> Designed by
+      <a href="https://le-portfolio-12.web.app/#" target="_blank">
+        Likhith Erram
+      </a></span>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
